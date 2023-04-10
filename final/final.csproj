@@ -1,0 +1,365 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C669B275-58CA-4E87-B081-136BF837BC1C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>final</RootNamespace>
+    <AssemblyName>final</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44390</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aboutus.aspx" />
+    <Content Include="Addtocart.aspx" />
+    <Content Include="Admin.aspx" />
+    <Content Include="Baby Productsaspx.aspx" />
+    <Content Include="Beverages.aspx" />
+    <Content Include="Cooking.aspx" />
+    <Content Include="Dairy.aspx" />
+    <Content Include="Desserts.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="Household.aspx" />
+    <Content Include="images\113851--1--1559751980.jpeg" />
+    <Content Include="images\1140-pharmacist-woman.imgcache.rev73f7dac4517c40077d7873481d533469.jpg" />
+    <Content Include="images\115160fa999f33a74e34173f883b05232c065102.jpg" />
+    <Content Include="images\157341359_856210948277072_579217728777238188_n.jpg" />
+    <Content Include="images\1_60c9a769ecb0c.png" />
+    <Content Include="images\1_Poundland-Promotion.jpg" />
+    <Content Include="images\290617779_1138034323428065_7150857430569796694_n.jpg" />
+    <Content Include="images\291405535_1139184866646344_3202915446185601590_n.jpg" />
+    <Content Include="images\291975250_1141009593130538_35195581356637870_n.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\9bbf4ff7f6b573011de38a45d69cce24.jpg" />
+    <Content Include="images\AdobeStock_279692163_Editorial_Use_Only-Beverage-FTR-new.jpg" />
+    <Content Include="images\allpacks08-min.png" />
+    <Content Include="images\Best-Baby-Skin-Care-Products-in-India-1024x555.jpg" />
+    <Content Include="images\cans-beverages-19492376.jpg" />
+    <Content Include="images\collage-different-types-rice-closeup-banner-design-collage-different-types-rice-closeup-banner-design-178453269.jpg" />
+    <Content Include="images\Dairy-products.jpg" />
+    <Content Include="images\Dakirby309-Simply-Styled-YouTube.ico" />
+    <Content Include="images\download-removebg-preview.png" />
+    <Content Include="images\Dozen-reasons_header.jpg" />
+    <Content Include="images\facebook-icon-square-8.jpg" />
+    <Content Include="images\free-instagram-logo-icon-2433-thumb.png" />
+    <Content Include="images\grindersbanner.jpg" />
+    <Content Include="images\HOME_CARE_COMBO_600X800-555x740.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\image_d0e133ede5.jpg" />
+    <Content Include="images\image_e54ee3fd0d.jpg" />
+    <Content Include="images\maxresdefault.jpg" />
+    <Content Include="images\Motha-news.jpg" />
+    <Content Include="images\new-250x250.jpg" />
+    <Content Include="images\Optimized-spices-2021-08-26-16-00-32-utc-1.jpg" />
+    <Content Include="images\pharmacy-2-1.jpg" />
+    <Content Include="images\product-6845.368004885503-600x600.png" />
+    <Content Include="images\promo.lk-promo-68cc07f80b6d4a588aba675992ee3e06-removebg-preview.png" />
+    <Content Include="images\s-l400.jpg" />
+    <Content Include="images\Sampath-Supermarket.jpg" />
+    <Content Include="images\search-icons-283914-removebg-preview.png" />
+    <Content Include="images\soft-drinks-beverages-supermarket-21460402.jpg" />
+    <Content Include="images\tea-coffee.jpg" />
+    <Content Include="images\youtube-logo-youtube-logo-no-background-1034980-removebg-preview.png" />
+    <Content Include="images\_119531800_gettyimages-1215040530.jpg" />
+    <Content Include="order.aspx" />
+    <Content Include="orderinfo.aspx" />
+    <Content Include="orders.aspx" />
+    <Content Include="Party.aspx" />
+    <Content Include="payment.aspx" />
+    <Content Include="Pharmacy.aspx" />
+    <Content Include="PlacedSuccessfully.aspx" />
+    <Content Include="PlaceOrder.aspx" />
+    <Content Include="Rice.aspx" />
+    <Content Include="sign up.aspx" />
+    <Content Include="signin.aspx" />
+    <Content Include="Spices.aspx" />
+    <Content Include="style.css" />
+    <Content Include="Tea and Coffee.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Addtocart.aspx.cs">
+      <DependentUpon>Addtocart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addtocart.aspx.designer.cs">
+      <DependentUpon>Addtocart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Baby Productsaspx.aspx.cs">
+      <DependentUpon>Baby Productsaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Baby Productsaspx.aspx.designer.cs">
+      <DependentUpon>Baby Productsaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beverages.aspx.cs">
+      <DependentUpon>Beverages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beverages.aspx.designer.cs">
+      <DependentUpon>Beverages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cooking.aspx.cs">
+      <DependentUpon>Cooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cooking.aspx.designer.cs">
+      <DependentUpon>Cooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dairy.aspx.cs">
+      <DependentUpon>Dairy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dairy.aspx.designer.cs">
+      <DependentUpon>Dairy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Desserts.aspx.cs">
+      <DependentUpon>Desserts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desserts.aspx.designer.cs">
+      <DependentUpon>Desserts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Household.aspx.cs">
+      <DependentUpon>Household.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Household.aspx.designer.cs">
+      <DependentUpon>Household.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderinfo.aspx.cs">
+      <DependentUpon>orderinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderinfo.aspx.designer.cs">
+      <DependentUpon>orderinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders.aspx.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders.aspx.designer.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Party.aspx.cs">
+      <DependentUpon>Party.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Party.aspx.designer.cs">
+      <DependentUpon>Party.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy.aspx.cs">
+      <DependentUpon>Pharmacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pharmacy.aspx.designer.cs">
+      <DependentUpon>Pharmacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlacedSuccessfully.aspx.cs">
+      <DependentUpon>PlacedSuccessfully.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlacedSuccessfully.aspx.designer.cs">
+      <DependentUpon>PlacedSuccessfully.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceOrder.aspx.cs">
+      <DependentUpon>PlaceOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlaceOrder.aspx.designer.cs">
+      <DependentUpon>PlaceOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rice.aspx.cs">
+      <DependentUpon>Rice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rice.aspx.designer.cs">
+      <DependentUpon>Rice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sign up.aspx.cs">
+      <DependentUpon>sign up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sign up.aspx.designer.cs">
+      <DependentUpon>sign up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Spices.aspx.cs">
+      <DependentUpon>Spices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spices.aspx.designer.cs">
+      <DependentUpon>Spices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tea and Coffee.aspx.cs">
+      <DependentUpon>Tea and Coffee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tea and Coffee.aspx.designer.cs">
+      <DependentUpon>Tea and Coffee.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\Cleaning-must-haves_1024x1024.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52467</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44390/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
